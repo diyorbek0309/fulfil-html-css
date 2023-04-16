@@ -1,0 +1,86 @@
+/* Fonts start */
+
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-Bold.woff2),
+        url(assets/fonts/Poppins-Bold.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-SemiBold.woff2),
+        url(assets/fonts/Poppins-SemiBold.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: SFPD;
+    src: url(assets/fonts/SFProDisplay-Regular.woff2),
+        url(assets/fonts/SFProDisplay-Regular.woff);
+    font-weight: 400;
+}
+
+/* Fonts finish */
+
+/* General styles start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, Arial, sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.block-name {
+    font-size: 1.25rem;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #10985D;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section_title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 72px;
+    color: #193C3F;
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.section_title span {
+    color: #3CB27F;
+    position: relative;
+}
+
+.section_title span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 66px;
+    left: 0;
+    background-color: #3CB27F;
+}
+
+.section_title span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 58px;
+    left: 0;
+    background-color: #3CB27F;
+}
+
+/* General styles finish */
