@@ -51,11 +51,12 @@ body {
 
 .section_title {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3em;
     line-height: 72px;
     color: #193C3F;
     text-align: center;
     margin-bottom: 59px;
+    transition: 0.8s all ease;
 }
 
 .section_title span {

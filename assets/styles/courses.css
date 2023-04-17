@@ -1,7 +1,7 @@
 
 .courses {
     max-width: 1200px;
-    height: 773px;
+    /* height: 773px; */
     margin: 0 auto;
     padding: 10px;
     background: rgba(60, 178, 127, 0.05);
@@ -43,4 +43,40 @@
     line-height: 140%;
     color: #000000;
     margin-top: 18px;
+}
+
+@media only screen and (max-width:1200px) {
+    .section_title {
+        transform: scale(0.8);
+    }
+    .course-cards {
+        justify-content: space-evenly;
+    }
+    .course-cards__item {
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width:765px) {
+    .section_title {
+        transform: scale(0.7);
+    }
+    .course-cards {
+        justify-content: center;
+    }
+    .course-cards__item {
+        transform: scale(0.7);
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .section_title {
+        transform: scale(0.8);
+    }
+    .course-cards {
+        justify-content: center;
+    }
+    .course-cards__item {
+        transform: scale(0.8);
+    }
 }
