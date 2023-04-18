@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+  src: url(./assets/fonts/SFPRODISPLAYREGULAR.OTF) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins";
+  font-size: 62.5%;
+}
+body {
+  background-color: #eaeaea;
+  color: #193c3f;
+}
+
+/* General styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-wrapper-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #10985d;
+}
+.section-main-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 62px;
+}
+.highlight {
+  color: #3cb27f;
+}
+.btn {
+  border-radius: 4px;
+  background-color: #09a964;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.mt-md {
+  margin-top: 30px;
+}
+
+/* General styles end */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .section-wrapper-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-wrapper-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-wrapper-title {
+    font-size: 1.4rem;
+  }
+}
