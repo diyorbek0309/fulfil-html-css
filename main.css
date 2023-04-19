@@ -64,23 +64,24 @@ body {
     position: relative;
 }
 
+
 .section_title span::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 4px;
-    top: 66px;
     left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
     background-color: #3CB27F;
 }
 
 .section_title span::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 4px;
-    top: 58px;
     left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 2px;
     background-color: #3CB27F;
 }
 
