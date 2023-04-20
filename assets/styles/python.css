@@ -1,4 +1,8 @@
 /* Python hero section */
+
+.text-left {
+  text-align: left;
+}
 .hero-section {
   padding: 50px 0;
 }
@@ -8,22 +12,16 @@
 .hero-content {
   width: 583px;
 }
-.hero-main-title {
-  font-size: 6.5rem;
-  font-weight: 700;
-  margin-top: 20px;
-  line-height: 72px;
-}
 .hero-description {
   width: 70%;
-  font-size: 2.4rem;
+  font-size: 24px;
   color: #55645e;
   line-height: 36px;
 }
 .hero-btn {
   width: 265px;
   height: 52px;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .hero-image {
@@ -85,10 +83,10 @@
 .hero-stats-item__check::after {
   content: "\2713";
   color: #3cb27f;
-  font-size: 2rem;
+  font-size: 20px;
 }
 .hero-stats-item__title {
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: 500;
   margin-left: 18px;
 }
@@ -117,15 +115,10 @@
   .hero-content {
     width: 50%;
   }
-
-  .hero-main-title {
-    font-size: 3.6rem;
-    line-height: 45px;
-  }
   .hero-description {
     width: 100%;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .hero-btn {
@@ -143,10 +136,10 @@
     border-radius: 4px;
   }
   .hero-stats-item__check::after {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
   .hero-stats-item__title {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 }
 
@@ -171,14 +164,10 @@
     width: 100%;
   }
 
-  .hero-main-title {
-    font-size: 4.4rem;
-    line-height: 45px;
-  }
   .hero-description {
     width: 100%;
-    font-size: 2.2rem;
-    line-height: 3rem;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .hero-btn {
@@ -194,10 +183,10 @@
     border-radius: 4px;
   }
   .hero-stats-item__check::after {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
   .hero-stats-item__title {
-    font-size: 2.2rem;
+    font-size: 22px;
   }
 }
 
@@ -213,15 +202,11 @@
   .hero-image img {
     width: 270px;
   }
-
-  .hero-main-title {
-    font-size: 3rem;
-  }
   .hero-description {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 20px;
+    line-height: 30px;
   }
   .hero-stats-item__title {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
