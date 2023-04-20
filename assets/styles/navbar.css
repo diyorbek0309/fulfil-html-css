@@ -1,0 +1,125 @@
+/* navbar */
+nav {
+  width: 100%;
+  margin-top: 3.5rem;
+}
+.desktop_navbar {
+  display: block;
+}
+.desktop_navbar ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+ul > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.courses_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  margin-right: 3.6rem !important;
+}
+
+
+.free_courses {
+  margin-right: 3rem;
+}
+.phone_number {
+  gap: 1.25rem;
+}
+.fulfil_logo {
+  height: 6rem;
+  width: 9.7rem;
+}
+.phone {
+  height: 2.1rem;
+  width: 2.1rem;
+}
+
+/* responsive navbar */
+.mobile_navbar {
+  display: none;
+}
+
+.mobile_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.kurslar_drop_down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+  width: 27.8rem;
+  height: 54.5rem;
+  border: 1px solid rgba(210, 220, 216, 1);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 1.2rem;
+  position: relative;
+  margin-left: 10rem;
+  padding: 3rem;
+}
+.kurslar_drop_down li {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-right: 0;
+}
+.kurslar_drop_down img {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+}
+.square {
+  width: 5rem;
+  height: 5rem;
+  transform: rotate(45deg);
+  border: 1px solid rgba(210, 220, 216, 1);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 1.2rem;
+  position: absolute;
+}
+
+@media (max-width: 375px) {
+  nav {
+    margin-top: 1.2rem;
+  }
+  .container {
+    max-width: 335px;
+  }
+  .desktop_navbar {
+    display: none;
+  }
+  .mobile_navbar {
+    display: block;
+    width: 100%;
+  }
+  .mobile_navbar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .phone_number li {
+    font-size: 1.4rem;
+  }
+  .fulfil_logo {
+    width: 6rem;
+    height: 3.7rem;
+  }
+  .mobile_logo img {
+    cursor: pointer;
+  }
+}
+
+/* end of navbar */
