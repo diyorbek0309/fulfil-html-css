@@ -261,6 +261,9 @@ body {
   display: inline-block;
   margin-bottom: 35px;
 }
+.footer-item-messengers {
+  display: none !important;
+}
 .footer-contact {
   padding: 24px;
   background: #193c3f;
@@ -432,7 +435,7 @@ body {
     display: none;
   }
   .footer-item-messengers {
-    display: inline-block;
+    display: inline-block !important;
   }
   .footer-item-flex {
     display: flex;
