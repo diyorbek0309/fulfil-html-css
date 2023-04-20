@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <h1>Hello World!</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css">
+  <title>Fullfil Edu</title>
+</head>
+
+<body class="container">
+  <nav>
+    <!-- desktop versiom -->
+    <div class="desktop_navbar">
+      <ul>
+        <div>
+          <li>
+            <img class="fulfil_logo" src="./assets/images/fulfil-logo.svg" alt="">
+          </li>
+          <li class="courses">
+            <span>Kurslar</span>
+            <span>
+              <img src="./assets/images/dropdown.svg" alt="">
+            </span>
+          </li>
+          <li class="courses">
+            <span>Biz haqimizda</span>
+            <span>
+              <img src="./assets/images/dropdown.svg" alt="">
+            </span>
+          </li>
+          <li class="free_courses">Ochiq darslar</li>
+          <li>O'quvchilar loyihalar</li>
+        </div>
+        <div class="phone_number">
+          <span>
+            <img class="phone" src="./assets/images/phone.svg" alt="">
+          </span>
+          <li>+998 88 330 06 66</li>
+        </div>
+      </ul>
+    </div>
+    <!-- end of esktop -->
+    <!-- mobile version -->
+    <div class="mobile_navbar">
+      <ul>
+        <div class="mobile_logo">
+          <img src="./assets/images/hamburger.svg" alt="not found">
+          <img class="fulfil_logo" src="./assets/images/fulfil-logo.svg" alt="">
+        </div>
+        <div class="phone_number">
+          <span>
+            <img class="phone" src="./assets/images/phone.svg" alt="">
+          </span>
+          <li>+998 88 330 06 66</li>
+        </div>
+      </ul>
+    </div>
+    <!-- end of mobile -->
+    <!-- kurslar dropdown -->
+    <div class="square"></div>
+    <ul class="kurslar_drop_down text-normal">
+      <li>
+        <img src="./assets/images/python-course.svg" alt="">
+        <span>Python</span>
+      </li>
+      <li>
+        <img src="./assets/images/suniy-inellekt-course.svg" alt="">
+        <span> Sun'iy intellekt</span>
+      </li>
+      <li>
+        <img src="./assets/images/nodejs-course.svg" alt="">
+        <span>NodeJS</span>
+      </li>
+      <li>
+        <img src="./assets/images/frontend-course.svg" alt="">
+        <span>Frontend</span>
+      </li>
+      <li>
+        <img src="./assets/images/react-course.svg" alt="">
+        <span>ReactJS</span>
+      </li>
+      <li>
+        <img src="./assets/images/android-course.svg" alt="">
+        <span>Android</span>
+      </li>
+      <li>
+        <img src="./assets/images/frontend-video-course.svg" alt=""><span> Frontend video</span>
+      </li>
+      <li>
+        <img src="./assets/images/suniy-intellekt-video-course.svg" alt="">
+        <span>Sun'iy intellekt video</span>
+      </li>
+    </ul>
+    <!-- end of kurslar dropdown -->
+  </nav>
+</body>
+
 </html>

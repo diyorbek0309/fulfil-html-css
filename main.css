@@ -1,0 +1,216 @@
+body {
+  font-family: poppins, Arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* Fonts start */
+
+@font-face {
+  font-family: Poppins;
+  src: url(assets/fonts/Poppins-Bold.woff2), url(assets/fonts/Poppins-Bold.woff);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(assets/fonts/Poppins-SemiBold.woff2),
+    url(assets/fonts/Poppins-SemiBold.woff);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SFPD;
+  src: url(assets/fonts/SFProDisplay-Regular.woff2),
+    url(assets/fonts/SFProDisplay-Regular.woff);
+  font-weight: 400;
+}
+
+/* Fonts finish */
+
+/* General styles start */
+.text-normal {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.24rem;
+}
+.block-name {
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #10985d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section_title {
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 72px;
+  color: #193c3f;
+  text-align: center;
+  margin-bottom: 59px;
+  transition: 0.8s all ease;
+}
+
+.section_title span {
+  color: #3cb27f;
+  position: relative;
+}
+
+.section_title span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 66px;
+  left: 0;
+  background-color: #3cb27f;
+}
+
+.section_title span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 58px;
+  left: 0;
+  background-color: #3cb27f;
+}
+
+/* General styles finish */
+
+/* navbar */
+
+nav {
+  width: 100%;
+  margin-top: 3.5rem;
+}
+.desktop_navbar {
+  display: block;
+}
+.desktop_navbar ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+ul > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  margin-right: 3.6rem;
+}
+li:first-child {
+  margin-right: 5.2rem;
+}
+.free_courses {
+  margin-right: 3rem;
+}
+.phone_number {
+  gap: 1.25rem;
+}
+.fulfil_logo {
+  height: 6rem;
+  width: 9.7rem;
+}
+.phone {
+  height: 2.1rem;
+  width: 2.1rem;
+}
+
+/* responsive navbar */
+.mobile_navbar {
+  display: none;
+}
+
+.mobile_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.kurslar_drop_down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+  width: 27.8rem;
+  height: 54.5rem;
+  border: 1px solid rgba(210, 220, 216, 1);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 1.2rem;
+  position: relative;
+  margin-left: 10rem;
+  padding: 3rem;
+}
+.kurslar_drop_down li {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+.kurslar_drop_down img {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+}
+.square {
+  width: 5rem;
+  height: 5rem;
+  transform: rotate(45deg);
+  border: 1px solid rgba(210, 220, 216, 1);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 1.2rem;
+  position: absolute;
+}
+
+@media (max-width: 375px) {
+  nav {
+    margin-top: 1.2rem;
+  }
+  .container {
+    max-width: 335px;
+  }
+  .desktop_navbar {
+    display: none;
+  }
+  .mobile_navbar {
+    display: block;
+    width: 100%;
+  }
+  .mobile_navbar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .phone_number li {
+    font-size: 1.4rem;
+  }
+  .fulfil_logo {
+    width: 6rem;
+    height: 3.7rem;
+  }
+  .mobile_logo img {
+    cursor: pointer;
+  }
+}
