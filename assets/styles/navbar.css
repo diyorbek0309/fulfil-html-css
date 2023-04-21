@@ -29,7 +29,6 @@ li {
   margin-right: 3.6rem !important;
 }
 
-
 .free_courses {
   margin-right: 3rem;
 }
@@ -39,6 +38,7 @@ li {
 .fulfil_logo {
   height: 6rem;
   width: 9.7rem;
+  margin-right: 6.1rem;
 }
 .phone {
   height: 2.1rem;
@@ -67,8 +67,9 @@ li {
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
   border-radius: 1.2rem;
   position: relative;
-  margin-left: 10rem;
+  margin-left: 6.5rem;
   padding: 3rem;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
 }
 .kurslar_drop_down li {
   display: flex;
@@ -77,19 +78,33 @@ li {
   margin-right: 0;
 }
 .kurslar_drop_down img {
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 1.2rem;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+
+  position: relative;
 }
+
+/* biz haqimizda dropdown */
+.nav_about_us {
+  width: 313px;
+  height: 353px;
+  margin-left: 19.5rem;
+}
+/* end of biz haqimizda dropdown */
 .square {
-  width: 5rem;
-  height: 5rem;
+  width: 3.2rem;
+  height: 3.2rem;
   transform: rotate(45deg);
   border: 1px solid rgba(210, 220, 216, 1);
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 1.2rem;
+  /* box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12); */
+  border-top-left-radius: 1.2rem;
   position: absolute;
+  left: 40%;
+  top: -1.5rem;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  border-bottom: none;
+  border-right: none;
 }
 
 @media (max-width: 375px) {
@@ -111,7 +126,7 @@ li {
     justify-content: space-between;
   }
   .phone_number li {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .fulfil_logo {
     width: 6rem;
@@ -120,6 +135,15 @@ li {
   .mobile_logo img {
     cursor: pointer;
   }
+  .phone {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
 }
-
+.not-active {
+  display: none;
+}
 /* end of navbar */
+.nav_drop_down {
+  position: absolute;
+}
