@@ -1,5 +1,5 @@
 
-.courses {
+.courses .container {
     max-width: 1200px;
     margin: 0 auto;
     background: rgba(60, 178, 127, 0.1);
@@ -7,7 +7,7 @@
 
 .course-cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -55,7 +55,7 @@
         padding: 0 7px;
     }
 
-    .courses .section_title {
+    .courses .container .section_title {
         font-size: 1.5rem;
         font-size: 24px;
         line-height: 130%;
