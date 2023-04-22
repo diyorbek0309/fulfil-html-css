@@ -67,7 +67,14 @@ body {
   margin-bottom: 59px;
   transition: 0.8s all ease;
 }
-
+@media (max-width: 480px) {
+  .section_title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 30px;
+  }
+}
 .section_title span {
   color: #3cb27f;
   position: relative;
@@ -75,15 +82,15 @@ body {
 }
 
 .section_title span::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    width: 95%;
-    height: 2px;
-    background-color: #3cb27f;
-    transform: rotate(1deg);
-    border-radius: 5px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 95%;
+  height: 2px;
+  background-color: #3cb27f;
+  transform: rotate(1deg);
+  border-radius: 5px;
 }
 
 .section_title span::after {
