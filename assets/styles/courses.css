@@ -1,13 +1,17 @@
-
 .courses {
+    background: radial-gradient(circle, rgba(60,178,127,0.1) 0%, rgba(255,255,255,0) 100%);
+}
+
+
+
+.courses .container {
     max-width: 1200px;
     margin: 0 auto;
-    background: rgba(60, 178, 127, 0.05);
 }
 
 .course-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -30,78 +34,132 @@
 .course-cards__item img {
     width: 60%;
 }
-/* 
-.course-cards__item:not(:nth-child(4n)) {
-    margin-right: 29px;
-} */
 
 .course-cards__item:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 .course-cards__item p {
     font-family: 'SFPD';
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     line-height: 140%;
     color: #000000;
     margin-top: 18px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .course-cards__item:not(:nth-child(3n)) {
-        margin-right: 29px;
+@media only screen and (max-width: 480px) and (min-width: 375px) {
+    .block-name {
+        font-size: 0.75em;
+        margin-bottom: 8px;
+    }
+
+    .course-cards {
+        padding: 0 7px;
+    }
+
+    .courses .container .section_title {
+        font-size: 1.5em;
+        line-height: 130%;
+        margin-bottom: 30px;
+        padding: 0 50px;
     }
     .course-cards__item {
-        transform: scale(0.9);
+        width: 162px;
+        height: 166px;
+        padding: 18px;
+    }
+
+    .course-cards__item p {
+        font-size: 14px;
+        line-height: 140%;
     }
 }
 
-@media only screen and (max-width: 992px) {
-    .course-cards__item:not(:nth-child(3n)) {
-        margin-right: 29px;
+@media only screen and (max-width: 576px) and (min-width: 480px) {
+    .block-name {
+        font-size: 0.75em;
+        margin-bottom: 8px;
+    }
+
+    .course-cards {
+        justify-content: space-around;
+    }
+
+    .courses .container .section_title {
+        font-size: 2em;
+        line-height: 130%;
+        margin-bottom: 30px;
+    }
+    .course-cards__item {
+        width: 162px;
+        height: 166px;
+        padding: 18px;
+    }
+
+    .course-cards__item p {
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
+
+@media only screen and (max-width: 786px) and (min-width: 576px) {
+    .block-name {
+        font-size: 0.75em;
+        margin-bottom: 8px;
+    }
+
+    .course-cards {
+        padding: 0 7px;
+        justify-content: space-around;
+    }
+
+    .courses .container .section_title {
+        font-size: 2em;
+        line-height: 130%;
+        margin-bottom: 30px;
     }
     .course-cards__item {
         width: 200px;
-        height: 206px;
-        padding: 25px 30px;
+        height: 204px;
+        padding: 18px;
+    }
+
+    .course-cards__item p {
+        font-size: 14px;
+        line-height: 140%;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .course-cards__item:not(:nth-child(4n)) {
-        margin-right: 29px;
+@media only screen and (max-width: 1400) and (min-width: 786px) {
+    .block-name {
+        font-size: 1.25em;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #10985d;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .course-cards {
+        padding: 0 7px;
+        justify-content: space-between;
+    }
+
+    .courses .container .section_title {
+        font-size: 3em;
+        line-height: 72px;
+        margin-bottom: 30px;
     }
     .course-cards__item {
-        width: 162px;
-        height: 168px;
-        padding: 10px 10px;
-        font-size:1rem;
+        width: 278px;
+        height: 285px;
+        padding: 18px;
     }
 
-    .courses .section_title {
-        font-size: 2rem;
-        padding: 0 10px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .course-cards__item:not(:nth-child(3n)) {
-        margin-right: 29px;
-    }
-
-   .courses .section_title {
-        font-size: 1.5rem;
-        padding: 15px 0;
-        margin-bottom: 25px;
-    }
-
-    .course-cards__item {
-        width: 162px;
-        height: 168px;
-        padding: 10px 10px;
-        font-size:1rem;
-        margin-right: 0;
+    .course-cards__item p {
+        font-size: 1.25em;
+        line-height: 140%;
     }
 }

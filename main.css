@@ -38,7 +38,7 @@
 .container {
   max-width: 1230px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 13px;
   margin: 0 auto;
 }
 
@@ -88,30 +88,42 @@ body {
   margin-bottom: 59px;
   transition: 0.8s all ease;
 }
-
+@media (max-width: 480px) {
+  .section_title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 30px;
+  }
+}
 .section_title span {
   color: #3cb27f;
   position: relative;
+  display: inline-block;
 }
 
 .section_title span::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 100%;
+  bottom: 2px;
+  width: 95%;
   height: 2px;
   background-color: #3cb27f;
+  transform: rotate(1deg);
+  border-radius: 5px;
 }
 
 .section_title span::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 5px;
-  width: 100%;
+  bottom: -2px;
+  width: 98%;
   height: 2px;
   background-color: #3cb27f;
+  transform: rotate(1deg);
+  border-radius: 5px;
 }
 
 /* General styles finish */
