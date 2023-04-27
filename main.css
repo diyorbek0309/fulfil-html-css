@@ -242,7 +242,12 @@ body {
 
 @media screen and (max-width: 500px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
+  }
+
+  .main_header .primary_btn {
+    width: 100%;
+    font-size: 1.4rem;
   }
 
   .header_title {
