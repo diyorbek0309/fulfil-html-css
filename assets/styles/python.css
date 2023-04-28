@@ -138,7 +138,90 @@
   .hero-stats-item__check::after {
     font-size: 18px;
   }
-  .hero-stats-item__title {
+}
+.center {
+  text-align: center;
+}
+.highlight {
+  color: #3cb27f;
+}
+.python-projects__block-name {
+  color: #10985d;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.python-projects__section {
+  padding: 36px 0;
+}
+.python-projects__title {
+  font-size: 48px;
+  color: #193c3f;
+  font-weight: 700;
+  margin-top: 12px;
+}
+.python-projects__description {
+  font-size: 20px;
+  color: #55645e;
+  max-width: 806px;
+  margin: 24px auto;
+}
+
+.python-projects__items {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.python-projects__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.python-projects__item:first-child .python-projects__item-box {
+  border-radius: 50%;
+  background: #e2f4ed;
+}
+.python-projects__item:nth-child(2) .python-projects__item-box {
+  background: #e9e5ff;
+}
+.python-projects__item:nth-child(3) .python-projects__item-box {
+  border-radius: 50%;
+}
+.python-projects__item:nth-child(4) .python-projects__item-box {
+  background: #fff2ef;
+  border-radius: 0px 125px 125px 0px;
+}
+.python-projects__item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  background: #ebf8ff;
+}
+.python-projects__item-title {
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 250px;
+  margin-top: 18px;
+}
+
+@media only screen and (max-width: 976px) {
+  .python-projects__title {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .python-projects__item-box {
+    width: 100px;
+    height: 100px;
+  }
+  .python-projects__item-box img {
+    width: 50px;
+  }
+  .python-projects__item-title {
+    max-width: 145px;
     font-size: 18px;
   }
 }
@@ -208,5 +291,47 @@
   }
   .hero-stats-item__title {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .python-projects__block-name {
+    font-size: 18px;
+  }
+  .python-projects__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .python-projects__items {
+    flex-wrap: wrap;
+  }
+  .python-projects__item {
+    width: 32%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .python-projects__block-name {
+    font-size: 12px;
+  }
+  .python-projects__title {
+    font-size: 24px;
+    margin: 8px auto;
+    line-height: 32px;
+    max-width: 300px;
+  }
+  .python-projects__description {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .python-projects__item {
+    width: 48%;
+  }
+  .python-projects__item-box img {
+    width: 45px;
+  }
+  .python-projects__item-title {
+    max-width: 145px;
+    font-size: 18px;
   }
 }
