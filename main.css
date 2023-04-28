@@ -16,6 +16,7 @@
 }
 body {
 	scroll-behavior: smooth;
+	background-color: #f8fffc;
 }
 
 /* Footer */
@@ -387,7 +388,7 @@ body {
 
 /* main why we start */
 
-.text__paragraph {
+.text_paragraph_why_we {
 	font-weight: 500;
 	font-size: 20px;
 	/* line-height: 140%; */
@@ -417,47 +418,44 @@ body {
 	line-height: 130%;
 	color: #193c3f;
 }
-.title__span {
+.title_span {
 	color: #3cb27f;
 	border-bottom: 3px double #3cb27f;
 }
 
-.item__main__container {
-	/* display: flex;
-	justify-content: space-evenly;
-	gap: 44px; */
-
+.why_we_item_main_container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
 	padding: 0px;
-	gap: 44px;
+	gap: 2.7em;
 }
 
-.item__container {
+.item_container_why_we {
 	display: flex;
 	flex-direction: column;
 	width: 20%;
-	/* background-color: green; */
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	padding-top: 0%;
-	gap: 18px;
+	gap: 1.125rem;
 	height: 250px;
 	cursor: pointer;
 }
 
-.images {
+.images_why_we {
 	display: flex;
 	align-items: center;
 	/* justify-content: center; */
 	margin: 5px auto 0;
+
 	width: 150px;
 	height: 150px;
+	box-sizing: border-box;
 	/* background-color: grey; */
 }
 
-.item__photo {
+.item_photo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -466,6 +464,7 @@ body {
 	background-color: #fff;
 	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
 	border-radius: 8px;
+	margin: 0 auto;
 }
 
 #third {
@@ -483,7 +482,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-	.item__main__container {
+	.why_we_item_main_container {
 		align-items: center;
 		justify-items: center;
 		display: grid;
@@ -491,15 +490,16 @@ body {
 		gap: 0;
 	}
 
-	.item__container {
+	.item_container_why_we {
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		width: 99%;
 		height: 250px;
 		padding-top: 0%;
 		gap: 3px;
 		box-sizing: border-box;
 		cursor: pointer;
+		text-align: center;
 	}
 
 	.title {
@@ -513,12 +513,13 @@ body {
 		margin: 0 auto;
 	}
 
-	.text__paragraph {
+	.text_paragraph_why_we {
 		font-weight: 300;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		text-align: center;
 		box-sizing: border-box;
 		margin: 0 auto;
+		padding: 0 auto;
 		/* margin-left: 2.7rem; */
 	}
 
@@ -534,7 +535,8 @@ body {
 	}
 
 	.main_part {
-		width: 85vw;
+		height: max-content;
+		width: 90%;
 	}
 }
 
