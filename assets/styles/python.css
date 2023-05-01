@@ -210,3 +210,158 @@
     font-size: 20px;
   }
 }
+
+/* Python why courses section start */
+
+.python_why_course{
+  margin: 50px 0;
+  background: rgb(60,178,127);
+  background: radial-gradient(circle, rgba(60, 178, 127, 0.322) 0%, rgba(255,255,255,1) 41%);
+}
+
+.python_why_course .section_title span::after{
+  display: none;
+}
+
+.python_why_course .section_title span::before{
+  display: none;
+}
+
+.python-course_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course_cards {
+  width: 380px;
+  height: 181px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.course_cards-text {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  .python_why_course .block-name {
+    font-size: 0.7rem;
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+  
+  .python_why_course .section_title {
+      font-size: 24px;
+      line-height: 130%;
+      padding:0 30px;
+      margin-bottom: 30px;
+  }
+  
+  .python-course_cards {
+    justify-content: space-evenly;
+  }
+  
+  .course_cards {
+    width: 162px;
+    height: 173px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .course_cards-text {
+    font-size: 1.12rem;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 786px) {
+  .python_why_course .section_title {
+      line-height: 130%;
+      padding:0 15px;
+      margin-bottom: 30px;
+  }
+  
+  .python-course_cards {
+    justify-content: space-between;
+  }
+  
+  
+  .course_cards {
+    width: 320px;
+    height: 173px;
+    padding: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 786px) and (min-width: 576px) {
+  .python_why_course .block-name {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+  
+  .python_why_course .section_title {
+      font-size: 24px;
+      line-height: 130%;
+      padding:0 15px;
+      margin-bottom: 30px;
+  }
+  
+  .python-course_cards {
+    justify-content: space-evenly;
+  }
+  
+  
+  .course_cards {
+    width: 220px;
+    height: 173px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .course_cards-text {
+    font-size: 1.12rem;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 480px) {
+  .python_why_course .block-name {
+    font-size: 0.7rem;
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+  
+  .python_why_course .section_title {
+      font-size: 24px;
+      line-height: 130%;
+      padding:0 30px;
+      margin-bottom: 30px;
+  }
+  
+  .python-course_cards {
+    justify-content: space-evenly;
+  }
+  
+  
+  .course_cards {
+    width: 182px;
+    height: 173px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .course_cards-text {
+    font-size: 1.12rem;
+  }
+}
+
+/* Python why courses section finish */
